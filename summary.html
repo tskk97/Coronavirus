@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+        <title>Coronavirus</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row bg-light py-2">
+                <nav id="header" class="col navbar navbar-expand-lg navbar-light">
+                    <div class="col-1">
+                        <img src="resources/corona.png" style="width: 80px;">
+                    </div>
+                    <div class="col-1">
+                        <button id="homepage" class="btn btn-primary btn-lg font-weight-bold">Home</button>
+                    </div>
+                    <div class="col-1">
+                        <button id="summary" class="btn btn-primary btn-lg font-weight-bold">Summary</button>
+                    </div>
+                    <div class="col text-right">
+                        <img src="resources/phone2.png" style="width: 30px;"><span class="h5 ml-1 font-weight-bold text-primary">Helpline: </span><span class="h5 ml-1">+91 9559695847</span>
+                    </div>
+                </nav>
+            </div>
+            <div class="row my-5">
+                <div class="col">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">1<span class="sr-only">(current)</span></span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="summary.js"></script>
+    </body>
+</html>
