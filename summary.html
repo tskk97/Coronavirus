@@ -11,9 +11,9 @@
     <body>
         <div class="container-fluid">
             <div class="row bg-light py-2">
-                <nav id="header" class="col navbar navbar-expand-lg navbar-light">
+                <nav id="header" class="col navbar navbar-expand-lg navbar-light shadow">
                     <div class="col-1">
-                        <img src="resources/corona.png" style="width: 80px;">
+                        <img class="img-fluid" src="resources/corona.png" style="width: 80px;">
                     </div>
                     <div class="col-1">
                         <button id="homepage" class="btn btn-primary btn-lg font-weight-bold">Home</button>
@@ -26,7 +26,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="row my-5">
+            <!-- <div class="row my-5">
                 <div class="col">
                     <nav aria-label="...">
                         <ul class="pagination">
@@ -38,6 +38,52 @@
                         </ul>
                     </nav>
                 </div>
+            </div> -->
+
+            <div class="row my-5">
+                <div class="col">
+                    <nav aria-label="...">
+                        <ul class="pagination" id="pages">
+
+                        </ul>
+                    </nav>
+
+                    <select class="custom-select col-1" name="perpage" id="pageSelect">
+                        <option value="50" selected>50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+            </div>
+            <div id="data" class="row">
+                <!-- <div class="col-3 mb-5">
+                    <div class="col">
+                        <div class="card mx-auto shadow-lg" style="width: 24rem; font-family: 'Titillium Web', sans-serif;">
+                            <div class="card-header border-dark">
+                                <div class="row">
+                                    <div id="country" class="col-8">
+                                        <h3 class="card-title font-weight-bold mt-3">Argentina</h3>
+                                    </div>
+                                    <div id="flag" class="col-4 text-right">
+                                        <img src="https://www.countryflags.io/ar/flat/64.png" class="card-img" style="width: 64px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body mt-4 font-weight-bold h5">
+                                <div class="card-subtitle mb-3 text-primary">New Confirmed: <span id="newConfirmed" class="card-text text-dark">115</span></div>
+
+                                <div class="card-subtitle mb-3 text-primary">Total Confirmed: <span id="totalConfirmed" class="card-text text-dark">115</span></div>
+                                
+                                <div class="card-subtitle mb-3 text-danger">New Deaths: <span id="newDeaths" class="card-text text-dark">115</span></div>
+                                
+                                <div class="card-subtitle mb-3 text-danger">Total Deaths: <span id="totalDeaths" class="card-text text-dark">115</span></div>
+                                
+                                <div class="card-subtitle mb-3 text-success">New Recovered: <span id="newRecovered" class="card-text text-dark">115</span></div>
+                                
+                                <div class="card-subtitle mb-3 text-success">Total Recovered: <span id="totalRecovered" class="card-text text-dark">115</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
